@@ -1,0 +1,603 @@
+/*
+Theme Name:     Arts Restore LA
+Description:    Theme for Arts Restore LA website, based on Foundation 4.
+Author:         Eric Gardner
+Template:       Foundation-master
+Version: 0.1
+
+(optional values you can add: Theme URI, Author URI, Version)
+*/
+
+
+/* Add foundation icons stylesheet */
+
+@import 'fonts/foundation_icons.css';
+
+
+
+/* ==========================================================================
+   TYPOGRAPHY
+   ========================================================================== */
+
+/* Global */
+
+body,h1,h2,h3,h4,h5,h6,p {font-family: "futura-pt", sans-serif;}
+h1,h2,h3,h4,h5,h6,a:link {font-weight:700;}
+
+.site-title .subheader {margin-bottom:0;}
+
+
+/* Home Page */
+
+body.home h3 {
+	font-size: 1.275rem;
+	text-transform: uppercase;
+}
+
+/* Links – body text */
+
+a:link, a:visited {
+	color: #000;
+	-webkit-transition:border-bottom 0.1s ease-in;  
+	-moz-transition:border-bottom 0.1s ease-in;  
+	-o-transition:border-bottom 0.1s ease-in;  
+	transition:border-bottom 0.1s ease-in;  
+}
+
+a:hover, a:active {
+/* 	color: #23D6EE; */
+	border-bottom: 3px solid black;
+
+}
+
+h2 a:link, h2 a:visited {
+	color: #fff;
+}
+
+h2 a:hover, h2 a:active {
+	color: #23D6EE;
+}
+
+/* Sidebar */
+
+.sidebar h5 {
+	text-transform: uppercase;
+	font-weight: 500;
+	letter-spacing: 2px;
+}
+
+
+/* ==========================================================================
+   HEADER STYLES
+   ========================================================================== */
+
+#arla_header, div#branding {
+	max-height: 125px;
+}
+
+/* Navigation styles */
+
+#arla_nav {
+	margin-top: 53px;
+}
+
+#arla_nav li {
+	font-size: 1rem;
+	letter-spacing: 1px;
+	text-transform: uppercase;
+	text-align: center;
+}
+
+#arla_nav a:link, 
+#arla_nav a:visited {
+	color: #000;
+	-webkit-transition:color 0.15s ease-in;  
+	-moz-transition:color 0.15s ease-in;  
+	-o-transition:color 0.15s ease-in;  
+	transition:color 0.15s ease-in;  		
+	-webkit-transition:border 0.15s ease-in;  
+	-moz-transition:border 0.15s ease-in;  
+	-o-transition:border 0.15s ease-in;  
+	transition:border 0.15s ease-in;  
+
+}
+
+#arla_nav a:hover, 
+#arla_nav a:active {
+/*	color: #fff;
+*/	border-bottom: 3px solid black;
+
+}
+
+li.current-menu-item a{
+	border-bottom: 3px solid black;
+}
+
+
+
+@media only screen and (min-width: 768px) and (max-width: 800px) {
+
+	#arla_nav {
+		margin-top: 45px;
+	}
+}
+
+
+
+@media only screen and (max-width: 767px) {
+	
+	#arla_nav {
+		background-color: rgba(0, 0, 0, 0.25);
+		margin-top: -1px;
+	}
+
+	#arla_nav li {
+		padding: 10px 0;
+	}
+}
+
+@media only screen and (min-width: 768px) and (max-width: 880px) {
+	#main_content {
+		margin-top: -2px;
+	}
+}
+
+/* ==========================================================================
+   Common Template Styles
+   ========================================================================== */
+
+.panel {
+	-webkit-box-shadow: 5px 5px 3px rgba(0, 0, 0, 0.25);
+	-moz-box-shadow: 5px 5px 3px rgba(0, 0, 0, 0.25);
+	box-shadow: 5px 5px 3px rgba(0, 0, 0, 0.25);
+	background-color: white;
+	border: none;
+
+}
+ 
+#main_content .panel {
+	padding: 0em;
+}
+
+body.archive div#main_content {
+	padding: 0em;
+}
+
+body.archive article {
+	padding: 1em;
+}
+
+article header, div#main_content header{
+	background-color: #000;
+	width: 100%;
+	padding: .25em .75em .1em .75em;
+}
+
+#main_content h2 {
+	margin-bottom: 0.25em;
+	color: white;
+	text-transform: uppercase;
+	font-weight: 500;
+	letter-spacing: 2px;
+}
+
+#main_content h2 a {
+	font-weight: 500;
+	text-transform: uppercase;
+	letter-spacing: 2px;
+}
+
+div.article_content {
+	padding: 1em;
+}
+
+.orbit-slides-container li.active img {
+	width: 100%;
+}
+
+.orbit-caption p {
+	font-size: 1.5em;
+	margin-bottom: .15em;
+	letter-spacing: 1px;
+}
+
+
+.orbit-prev:hover, .orbit-next:hover, .orbit-prev:active, .orbit-next:active {
+	border-bottom: none;
+}
+
+.fullwidth {
+	border: none;
+	margin: none;
+	padding: none;
+	width: 100%;
+}
+
+.sidebar dl {
+	margin-bottom: 0.25em;
+}
+
+/* ==========================================================================
+   POST INDEX PAGE STYLES
+   ========================================================================== */
+
+body.archive div.index_content {
+	padding: 0em .75em;
+}
+
+div.index_content {
+	margin: 0px auto;
+	width: inherit;
+}
+
+.index_content h4 {
+	margin-top: .4em;
+	margin-bottom: 0em;
+	padding-bottom: 0em;
+}
+
+h4.subheader {
+	font-size: 1em;
+	text-transform: uppercase;
+	margin-top: .6em;
+}
+
+dl.arla_excerpt {
+	margin-bottom: .75em;
+}
+
+dl.arla_excerpt p {
+	margin-bottom: .75em;
+}
+
+div.index_content {
+	border-bottom: 1px solid #ddd;
+}
+
+body.archive div.index_content span {
+	display: inline;
+}
+
+#event_toggle {
+	padding-bottom: .75em;
+}
+
+/* ==========================================================================
+   VENDOR & Event Single PAGE STYLES
+   ========================================================================== */
+
+body.single-vendor .orbit-container {
+	max-height: 450px;
+}
+
+body.single-vendor div.orbit-timer {
+	visibility: hidden;
+}
+
+dl.vendor_data, dl.event_data {
+	font-family: helvetica;
+	font-size: .875em;
+	margin-bottom: .65em;
+}
+
+dl.vendor_data i, dl.event_data i {
+	position: relative;
+	margin-right: .25em;
+	top: 2px;
+}
+
+dl#vendor_hours {
+	margin-left: 1.5em;
+}
+
+dl#vendor_hours i {
+	margin-left: -1.5em;
+}
+
+dl#event_date {
+	font-weight: bold;
+}
+
+#vendor_sidebar h3, #event_sidebar h3, .sidebar h3{
+	font-weight: 500;
+	text-transform: uppercase;
+	font-size: 1.25em;
+	letter-spacing: 2px;
+}
+
+ul.vendorgrid {
+	max-width: 100%;
+	text-align: center;
+	margin-left: auto;
+	margin-right: auto;
+	background-color: #000;
+	-webkit-box-shadow: 5px 5px 3px rgba(0, 0, 0, 0.125);
+	-moz-box-shadow: 5px 5px 3px rgba(0, 0, 0, 0.125);
+	box-shadow: 5px 5px 3px rgba(0, 0, 0, 0.125);
+	border: none;
+
+}
+
+.vendorgrid li {
+	height: 200px;
+	text-align: left;
+    background-size:cover;
+    background-position:center center;
+    padding: 0em;
+
+}
+
+.vendorgrid li a{
+	display: block;
+	height: 100%;
+	width: 100%;
+	margin: 0em;
+	padding: 0em;
+}
+
+.vendlrgrid li:hover, {
+	border-bottom: none;
+}
+
+.vendorgrid li h5 {
+	width: 100%;
+	padding: .5em;
+	margin: 0em;
+	color: #fff;
+	background-color: rgba(0,0,0,0.5);
+	-webkit-transition:color 0.1s ease-in;  
+	-moz-transition:color 0.1s ease-in;  
+	-o-transition:color 0.1s ease-in;  
+	transition:color 0.1s ease-in; 
+	-webkit-transition:background-color 0.1s ease-in;  
+	-moz-transition:background-color 0.1s ease-in;  
+	-o-transition:background-color 0.1s ease-in;  
+	transition:background-color 0.1s ease-in; 
+
+}
+
+.vendorgrid li:hover h5{
+	background-color: rgba(255,255,255,0.75);
+	color: #000;
+}
+
+body.post-type-archive-event div.index_content {
+	background-color: #fff;
+	-webkit-transition:background-color 0.1s ease-in;  
+	-moz-transition:background-color 0.1s ease-in;  
+	-o-transition:background-color 0.1s ease-in;  
+	transition:background-color 0.1s ease-in;  			
+}
+
+body.post-type-archive-event div.index_content:hover {
+	background-color: #f1f1f1;
+}
+
+h5.event_date {
+	color: #666;
+	text-transform: uppercase;
+	font-size: 1em;
+}
+
+h5.event_title {
+	margin-bottom: 0.25em;
+}
+
+div.event_listing {
+	padding-top: 10px;
+}
+
+div#pagination {
+	height: 40px;
+	background-color: #000;
+	border-bottom: none;
+}
+
+div.nav-next, div.nav-previous {
+	margin-top: 10px;
+}
+
+div#pagination a:link, div#pagination a:visited {
+	color: #fff;
+	-webkit-transition:color 0.15s ease-in;  
+	-moz-transition:color 0.15s ease-in;  
+	-o-transition:color 0.15s ease-in;  
+	transition:color 0.15s ease-in;  		
+}
+
+div#pagination a:hover, div#pagination a:active {
+	color: #999;
+
+}
+
+div.nav-previous {
+	text-align: right;
+}
+
+/* ==========================================================================
+   STATIC HOME PAGE STYLES
+   ========================================================================== */
+
+/* Orbit styles */
+
+body.home .orbit-container{
+	max-height: 425px;
+	-webkit-box-shadow: 5px 5px 3px rgba(0, 0, 0, 0.25);
+	-moz-box-shadow: 5px 5px 3px rgba(0, 0, 0, 0.25);
+	box-shadow: 5px 5px 3px rgba(0, 0, 0, 0.25);
+	margin-top: -2px;
+}
+
+body.home .orbit-container img {
+	vertical-align: middle;
+	display: table-cell;
+}
+
+body.home a.orbit-next, body.home a.orbit-prev,  {
+/* 	display: none; */
+}
+
+div.orbit-slide-number {
+	display: none;
+}
+
+body.home div.orbit-timer {
+	visibility: hidden;
+}
+#arla_home_orbit div.orbit-caption {
+	background-color: rgba(0,0,0,0);
+	height: 100%;
+}
+
+body.home .orbit-caption h1 {
+	text-align: center;
+	text-transform: uppercase;
+	letter-spacing: 2px;
+	position: relative;
+	bottom: -25%;
+	-webkit-text-shadow: 2px 2px 3px rgba(0, 0, 0, 0.25);
+	-moz-text-shadow: 2px 2px 3px rgba(0, 0, 0, 0.25);
+	text-shadow: 2px 2px 3px rgba(0, 0, 0, 0.25);
+
+}
+
+
+body.home .orbit-caption h1 a:link, body.home .orbit-caption h1 a:visited,
+body.home .orbit-caption h1 a:hover, body.home .orbit-caption h1 a:active {
+	border-bottom: none;
+}
+
+@media only screen and (max-width:480px) {
+	body.home .orbit-caption h1 {
+		bottom: -18%;
+		font-size: 1.5em;
+	}
+
+}
+
+div.arla_home_columns {
+	margin-top: 25px;
+	height: 290px;
+	overflow: hidden;
+}
+
+.arla_home_columns p {
+	font-size: 1em;
+	line-height: 1.25;
+	margin-bottom: 1em;
+}
+
+div#map-canvas {
+	background-image: url(img/map_background.jpg);
+	height: 90%;
+	background-position: 50% 45%;
+}
+
+@media only screen and (-Webkit-min-device-pixel-ratio: 1.5), 
+	only screen and (-moz-min-device-pixel-ratio: 1.5), 
+	only screen and (-o-min-device-pixel-ratio: 3/2), 
+	only screen and (min-device-pixel-ratio: 1.5) {
+	.div#map-canvas {
+		background-image: url(img/map_background_2.jpg);
+		}
+	}
+
+
+ul#arla_eventlist {
+	list-style-type: none;
+
+}
+
+ul#arla_eventlist li {
+	line-height: 1;
+}
+
+#arla_eventlist li a {
+	font-size: 1em;
+}
+
+#arla_eventlist h6.subheader {
+	color: #999;
+	text-transform: uppercase;
+	font-size: 0.9em;
+	line-height: 1;
+	
+}
+
+@media only screen and (max-width:767px) {
+	div.arla_home_columns {
+		height: auto;
+	}
+	div#map-canvas {
+		height: 250px;
+	}
+}
+
+@media only screen and (min-width:900px) {
+	.arla_home_columns p {
+		font-size: 1.15em;
+		line-height: 1.4;
+	}
+	div.arla_home_columns.panel h6 {
+		line-height: 1.4;
+	}
+} 
+
+/* ==========================================================================
+   Footer Styles
+   ========================================================================== */
+
+
+body.post-type-archive-vendor footer.row, body.post-type-archive-slide footer.row {
+	margin-top: 1.25em;
+}
+
+footer.row {
+	margin-top: 10px;
+}
+
+footer.row div.logo {
+	float: left;
+	margin-right: 10px;
+	margin-bottom: 30px;
+	height: 40px;
+	background-repeat: no-repeat;
+
+}
+
+footer.row #hammer {
+	background-image: url(img/hammerlogo.png);
+	background-position: center;
+	width: 86px;
+
+}
+
+footer.row #ucla {
+	background-image: url(img/uclalogo.png);
+	background-position: center;
+	width: 80px;
+}
+
+footer.row #la2050 {
+	background-image: url(img/la2050logo.png);
+	background-position: center;
+	width: 90px;
+}
+
+footer.row li i {
+	font-size: 2rem;
+}
+
+ul.social_links a:hover, ul.social_links a:active {
+	color: #fff;
+	border-bottom: none;
+}
+
+@media only screen and (max-width: 767px) {
+	footer.row li {
+		font-size: 2rem;
+		text-align: center;
+		margin-top: 0px;
+		margin-bottom: 15px;
+	}
+}
